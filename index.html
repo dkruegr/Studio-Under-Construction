@@ -4,103 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <title>DKreative Studio – Where Vision Becomes Reality</title>
-  <style>
-
-    :root {
-      --bg-white: #ffffff;
-      --gradient-start: rgba(255, 255, 255, 0.8);
-      --gradient-end: rgba(2, 36, 86, 0.5);
-      --text-dark: #022456;
-      --text-muted: #444;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Cabinet Grotesque', sans-serif;
-      background: var(--bg-white);
-      color: var(--text-dark);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
-      text-align: center;
-      background: radial-gradient(circle at center center, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    }
-
-    .logo {
-      max-width: 204px;
-      margin-bottom: 1rem;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      margin-top: 0.25rem;
-      font-weight: 100;
-      color: var(--text-dark);
-    }
-
-    .message {
-      margin-top: 4rem;
-      font-size: 1rem;
-      color: var(--text-muted);
-    }
-
-    .footer {
-      padding: 2rem;
-      text-align: center;
-      background-color: #f9f9f9;
-      font-size: 0.95rem;
-      color: var(--text-dark);
-    }
-
-    .social {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      font-size: 0.95rem;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    @media (min-width: 600px) {
-      .tagline {
-        font-size: 3rem;
-      }
-
-      .message {
-        font-size: 1.2rem;
-      }
-      
-      .email {
-        font-weight: 700;
-      }
-
-      .footer {
-        font-size: 1rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
   <div class="hero">
     <!-- Logo -->
-    <img src="Asset 1.svg" alt="DKreative Studio Logo" class="logo" />
+    <img src="Assets/Asset 1.svg" alt="DKreative Studio Logo" class="logo" />
     
     <!-- Tagline -->
     <div class="tagline">.....Where Vision Becomes Reality</div>
@@ -111,11 +23,30 @@
 
   <!-- Footer -->
   <div class="footer">
-    <p>Have a project you want to work on? Email us at <a class="email" href="mailto:dkreativestudiohq@gmail.com">dkreativestudiohq@gmail.com</a></p>
+    <div class="footer-top">
+      <div class="footerlogo">
+        <img src="Assets/Footer Icon & Wordmark.svg" alt="Logo" class="footer-logo">
+      </div>
 
-    <div class="social">
-      <div>X (Twitter) & Instagram: <a href="https://x.com/dkreativestudio" target="_blank">@dkreativestudio</a> • <a href="https://instagram.com/dkreativestudio" target="_blank">@dkreativestudio</a></div>
-      <div>Founder: <a href="https://x.com/dkreugr" target="_blank">@dkruegr</a></div>
+      <div class="footer-links"> 
+        <a href="https://dkreativestudio.com" target="_blank"> Services</a>
+        <a href="https://dkreativestudio.com" target="_blank"> About</a>
+        <a href="https://dkreativestudio.com" target="_blank"> Works</a>
+      </div>
+
+      <div class= "social-links">
+        <a href="https://x.com/dkreativestudio" target="_blank"><img src="Assets/uil_linkedin-alt.svg" alt="linkedin icon" class="linkedin-icon"/></a> 
+        <a href="https://instagram.com/dkreativestudio" target="_blank"><img src="Assets/fe_instagram.svg" alt="instagram icon" class="instagram-icon"/></a>
+        <a href="https://x.com/dkruegr" target="_blank"><img src="Assets/devicon_twitter.svg" alt="twitter icon" class="twitter-icon"/></a>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 DKreative Studio. All rights reserved.</p>
+      <div class="footer-email"><img src="Assets/fe_mail.svg" alt="email icon"/><strong>dkreativestudiohq@gmail.com</strong></div>
+      <button class="footer-button"><img src="Assets/Arrow up.svg" alt="arrow up icon" class="arrow up"></button>
     </div>
   </div>
 
