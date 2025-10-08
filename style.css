@@ -39,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   gap: 24px;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: normal;
 }
 
@@ -49,7 +49,7 @@ header {
   padding: 12px 24px;
   border: none;
   border-radius: 1000px;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: bold;
   cursor: pointer;
 }
@@ -57,7 +57,7 @@ header {
 body {
   margin: 0;
   font-family: 'Cabinet Grotesque', sans-serif;
-  background: var(--bg-white);
+  background: #F7F8F9;
   color: var(--text-dark);
   display: flex;
   flex-direction: column;
@@ -111,10 +111,10 @@ body {
 }
 
 .ready-text-container h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 .ready-text-container p {
-  font-size: 2em;
+  font-size: 1.25em;
 }
 .ready-text-container h1, .ready-text-container p {
   color: white;
@@ -128,7 +128,7 @@ body {
   padding: 20px 32px;
   border: none;
   border-radius: 1000px;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -142,8 +142,8 @@ body {
   padding: 32px 64px 32px 64px;
   text-align: center;
   background-color: #f9f9f9;
-  font-size: 0.95rem;
-  color: var(--text-dark);
+  /* font-size: 1em; */
+  color: #323A46;
 }
 
 .footer-top {
@@ -163,6 +163,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    font-size: 1.25em;
 
 }
 
@@ -172,6 +173,7 @@ body {
   flex-direction: row;
   gap: 20px;
   font-size: 0.95rem;
+  align-items: center;
 }
 
 .footer-divider {
