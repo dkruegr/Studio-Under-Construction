@@ -68,12 +68,13 @@ h1, h2, p {
   font-weight: 600;
   cursor: pointer;
   transform-origin: center;
-  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .header-button:hover {
   transform: scale(1.11);
   background: linear-gradient(135deg, #04317A, #022456);
+  transition: transform 0.5s ease, background 0.5s ease;
+
 }
 
 body {
@@ -175,12 +176,13 @@ body {
   cursor: pointer;
   width: fit-content;
   transform-origin: center;
-  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .about-button:hover {
   transform: scale(1.11);
   background: linear-gradient(135deg, #04317A, #022456);
+  transition: transform 0.5s ease, background 0.5s ease;
+
 }
 
 /* Right Container */
@@ -283,7 +285,7 @@ body {
 .tech:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   /* transform: translateY(-4px); */
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 /* Ready To Start Section */
@@ -327,12 +329,13 @@ body {
   align-items: center;
   gap: 8px;
   transform-origin: center;
-  transition: transform 0.3s ease, background 0.3s ease;
+  
 }
 
 .ready-button:hover {
-  transform: scale(1.11);
+  transform: scale(1.1);
   background: linear-gradient(135deg, #CCD3DD, #B3BDCC);
+  transition: transform 0.5s ease, background 0.5s ease;
 }
 
 /* Footer Section */
@@ -372,6 +375,7 @@ body {
   gap: 20px;
   font-size: 0.95rem;
   align-items: center;
+  transform-origin: center;
 }
 
 .footer-divider {
@@ -405,15 +409,15 @@ body {
     border: none;
     cursor: pointer;
     position: relative;
-    transition: all 0.5s ease;
     transform-origin: center;
     z-index: 0;
 }
 
 .footer-button:hover {
-  transform: scale(1.11);
-  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   background: linear-gradient(135deg, #04317A, #022456);
+  transition: all 0.5s ease;
 }
 
 a {
@@ -424,7 +428,7 @@ a {
   position: relative;
 }
 
-a::after {
+nav a::after, .footer-links a::after {
   width: 0;
   height: 2px;
   bottom: 0;
@@ -439,9 +443,14 @@ a:hover {
   color: #022456;
 }
 
-a:hover::after {
+nav a:hover::after, .footer-links a:hover::after {
   width: 100%;
 } 
+
+.social-links a:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
 
 @media (min-width: 600px) {
   .tagline {
