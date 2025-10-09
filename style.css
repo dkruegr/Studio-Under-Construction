@@ -14,6 +14,11 @@ header {
   z-index: 999;
 }
 
+.section-ellipse {
+  width: 12px;
+  height: 12px;
+}
+
 .navbar {
   width: 80vw;
   height: auto;
@@ -39,8 +44,9 @@ header {
   display: flex;
   align-items: center;
   gap: 24px;
-  font-size: 1.25em;
-  font-weight: normal;
+  font-size: 1.125em;
+  font-weight: 300;
+  color: #000;
 }
 
 .header-button button {
@@ -49,8 +55,8 @@ header {
   padding: 12px 24px;
   border: none;
   border-radius: 1000px;
-  font-size: 1.25em;
-  font-weight: bold;
+  font-size: 1.125em;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -94,6 +100,61 @@ body {
     }
 
 
+/* Technologies We Use Section */
+.tech-we-use {
+  background-color: #F7F8F9;
+  padding: 64px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.tech-we-use-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tech-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.tech-text-container h2, .tech-text-container p {
+  text-align: center;
+  margin: 0;
+}
+
+.tech-text-container h2 {
+  color: #022456;
+  font-size: 1.5em;
+}
+
+.tech-text-container p {
+  color: #323A46;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.tech-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tech {
+  background-color: white;
+  padding: 20px 24px;
+  color: #000;
+  font-size: 1.125em;
+  font-weight: medium;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Ready To Start Section */
 .ready-start {
   background-color: #022456;
@@ -111,7 +172,7 @@ body {
 }
 
 .ready-text-container h1 {
-  font-size: 3em;
+  font-size: 2.25em;
 }
 .ready-text-container p {
   font-size: 1.25em;
@@ -128,7 +189,7 @@ body {
   padding: 20px 32px;
   border: none;
   border-radius: 1000px;
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: bold;
   cursor: pointer;
   display: flex;
