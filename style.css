@@ -117,6 +117,80 @@ body {
     }
 
 
+/* Services Section */
+.services {
+  background-color: #F7F8F9;
+  padding: 64px 200px; 
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.services-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.services-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.services-text-container h2, .services-text-container p {
+  text-align: center;
+}
+
+.services-text-container h2 {
+  color: #022456;
+  font-size: 1.5em;
+}
+
+.services-text-container p {
+  color: #323A46;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.service {
+  background-color: white;
+  padding: 24px 24px;
+  border-radius: 12px;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-4px); */
+  transition: all 0.5s ease;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.service-title {
+  font-size: 1.5em;
+}
+
+.service-description {
+  font-size: 1.125em;
+  color: #323A46;
+  font-weight: 400;
+}
+
+.services-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 /* About Us Section */
 .about-us {
   background-color: #B3BDCC;
