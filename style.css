@@ -6,6 +6,7 @@
  --text-muted: #444;
 }
 
+
 header {
   height: auto;
   margin-top: 24px;
@@ -30,6 +31,7 @@ h1, h2, h3, p {
   height: 28px;
 }
 
+/* Navbar Section */
 .navbar {
   position: fixed;
   width: 60vw;
