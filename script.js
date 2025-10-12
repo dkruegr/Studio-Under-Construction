@@ -8,7 +8,7 @@
     }
   });
 
-  // Accordion Functionality
+// Accordion Functionality
 // Select all accordion items
 const accordionItems = document.querySelectorAll('.accordion-item');
 
