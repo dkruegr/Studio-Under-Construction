@@ -6,7 +6,42 @@
     } else {
       navbar.classList.remove('scrolled');
     }
-  });
+});
+
+
+// Hamburger + Dropdown Toggle
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+const navDropdown = document.querySelector('.nav-dropdown');
+
+hamburger.addEventListener('click', () => {
+  const isActive = navDropdown.classList.toggle('active');
+  navbar.classList.toggle('active');
+  hamburger.classList.toggle('open');
+
+  if (isActive) {
+    // OPEN: make visible immediately, then animate
+    navDropdown.style.visibility = 'visible';
+    navDropdown.style.maxHeight = navDropdown.scrollHeight + 'px';
+    navDropdown.style.opacity = '1';
+  } else {
+    // CLOSE: animate first, then hide after transition ends
+    navDropdown.style.maxHeight = '0';
+    navDropdown.style.opacity = '0';
+
+    navDropdown.addEventListener(
+      'transitionend',
+      function handleTransition(e) {
+        if (e.propertyName === 'opacity' && !navDropdown.classList.contains('active')) {
+          navDropdown.style.visibility = 'hidden';
+        }
+        navDropdown.removeEventListener('transitionend', handleTransition);
+      }
+    );
+  }
+});
+
+
 
 // Accordion Functionality
 // Select all accordion items
@@ -59,5 +94,9 @@ window.addEventListener('DOMContentLoaded', () => {
     answer.style.opacity = '0';
     item.querySelector('.chevron-down').style.transform = 'rotate(0deg)';
   });
+
+  // ✅ NEW: set initial dropdown state for smooth animation
+  navDropdown.style.maxHeight = '0';
+  navDropdown.style.opacity = '0'
 });
 
