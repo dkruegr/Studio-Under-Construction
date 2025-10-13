@@ -1655,6 +1655,165 @@ a {
 /* Mobile Styling */
 
 @media (max-width: 600px) {
+
+
+/* Technologies We Use - Mobile */
+.tech-we-use {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px;
+  gap: 40px;
+}
+
+.tech-we-use-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tech-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.tech-text-container h2, .tech-text-container p {
+  text-align: center;
+  margin: 0;
+}
+
+.tech-text-container h2 {
+  color: #022456;
+  font-size: 1.25em;
+}
+
+.tech-text-container p {
+  color: #323A46;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* Tech Grid */
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+}
+
+.tech {
+  background-color: white;
+  padding: 20px 20px;
+  color: #000;
+  font-size: 1.125em;
+  font-weight: 500;
+  width: auto;
+  height: auto;
+  border: 1px solid #04317A;
+  border-radius: 12px;
+}
+
+
+/* Portfolio - Mobile */
+.portfolio {
+  background-color: #B3BDCC;
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portfolio-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.portfolio-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portfolio-text-container h2 {
+  font-size: 1.25em;
+}
+
+.portfolio-text-container p {
+  color: #323A46;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* Project Grid */
+
+.portfolio-grid-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.portfolio-item:nth-child(even) {
+  transform: translateY(0px);
+}
+
+.portfolio-item-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.portfolio-item-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+/* Project Details */
+
+.portfolio-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 0px;
+}
+
+.portfolio-item-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portfolio-item-text-container h2 {
+  font-size: 1.2em;
+  color: #0D0F11;
+}
+
+.portfolio-item-text-container p {
+  font-size: 1em;
+  color: #323A46;
+}
+
+.portfolio-item-category-container p {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  color: #01122B;
+  font-weight: 500;
+}
+
+
  
 /* FAQ - Mobile */
 .faq {
