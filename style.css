@@ -1657,6 +1657,195 @@ a {
 @media (max-width: 600px) {
 
 
+/* Services Section - Mobile */
+.services {
+  background-color: #F7F8F9;
+  padding: 48px 24px; 
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.services-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.services-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.services-text-container h2, .services-text-container p {
+  text-align: center;
+}
+
+.services-text-container h2 {
+  color: #022456;
+  font-size: 1.25em;
+}
+
+.services-text-container p {
+  color: #323A46;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.service {
+  background-color: white;
+  padding: 24px 24px;
+  border-radius: 12px;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-4px); */
+  transition: all 0.5s ease;
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.service-title {
+  font-size: 1.25em;
+}
+
+.service-description {
+  font-size: 1.125em;
+  color: #323A46;
+  font-weight: 400;
+}
+
+/* Services Grid */
+
+.services-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+/* About Us - Mobile */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+/* Left Container */
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.about-us-heading h2 {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.about-text-container h1, .about-text-container p {
+  text-align: center;
+  margin: 0;
+}
+
+.about-text-container h1 {
+  font-size: 2.25em;
+}
+
+.about-text-container p {
+  color: #323A46;
+  font-size: 1.125em;
+}
+
+.about-button {
+  background-color: #022456;
+  color: white;
+  font-size: 1.125em;
+  font-weight: 700;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 1000px;
+  cursor: pointer;
+  width: fit-content;
+  transform-origin: center;
+}
+/* Right Container */
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.step-number {
+  font-weight: 500;
+}
+
+.step-heading {
+  font-size: 1.5em;
+}
+
+.step-heading-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.step-message {
+  font-size: 1.1em;
+  color: #0D0F11;
+  font-weight: 400;
+}
+
+.step-message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+
 /* Technologies We Use - Mobile */
 .tech-we-use {
   display: flex;
@@ -1690,7 +1879,7 @@ a {
 
 .tech-text-container p {
   color: #323A46;
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: 400;
 }
 
@@ -1801,7 +1990,7 @@ a {
 }
 
 .portfolio-item-text-container p {
-  font-size: 1em;
+  font-size: 1/125em;
   color: #323A46;
 }
 
@@ -1819,7 +2008,7 @@ a {
 .faq {
   background-color: #F7F8F9;
   display: flex;
-  padding: 48px 16px;
+  padding: 48px 24px;
   flex-direction: column;
   gap: 40px;
   align-items: center;
@@ -1837,7 +2026,7 @@ a {
 
 .faq-text-container p {
   color: #323A46;
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: 400;
   text-align: center;
 }
@@ -1934,7 +2123,7 @@ a {
   font-size: 2.25em;
 }
 .ready-text-container p {
-  font-size: 1em;
+  font-size: 1.125em;
 }
 .ready-text-container h1, .ready-text-container p {
   color: white;
@@ -1972,7 +2161,6 @@ a {
   padding: 32px 16px;
   text-align: center;
   background-color: #f9f9f9;
-  /* font-size: 1em; */
   color: #323A46;
 }
 
@@ -1990,20 +2178,12 @@ a {
   cursor: pointer;
 }
 
-/* .footer-links {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-size: 1.125em;
-  font-weight: 400;
-} */
 
 .social-links {
   /* margin-top: 1rem; */
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* font-size: 0.95rem; */
   align-items: center;
   transform-origin: center;
 }
@@ -2022,7 +2202,7 @@ a {
 }
 
 .copyright {
-  font-size: 1em;
+  font-size: 1.125em;
   text-align: left;
 }
 
@@ -2030,7 +2210,7 @@ a {
   align-items: center;
   display: flex;
   gap: 4px;
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: 400;
 }
 
