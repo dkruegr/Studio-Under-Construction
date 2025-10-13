@@ -1544,6 +1544,9 @@ nav a:hover::after, .footer-links a:hover::after {
   background-color: #f9f9f9;
   /* font-size: 1em; */
   color: #323A46;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer-top {
@@ -1579,6 +1582,8 @@ nav a:hover::after, .footer-links a:hover::after {
 
 .footer-divider {
   background-color: #A0ABBB;
+  width: 100%;
+  margin: auto;
 }
 
 .footer-bottom {
@@ -1610,6 +1615,126 @@ nav a:hover::after, .footer-links a:hover::after {
 .footer-button {
   width: 64px;
   height: 64px;
+  padding: 20px 20px;
+  border-radius: 1000px;
+  background-color: #022456;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transform-origin: center;
+  /* z-index: 0; */
+}
+
+.footer-button:hover {
+  transform: scale(1.05);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background: linear-gradient(135deg, #04317A, #022456);
+  transition: all 0.5s ease;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+.social-links a:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+}
+
+
+
+/* Mobile Styling */
+
+@media (max-width: 600px) {
+
+  /* Footer - Mobile */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  text-align: center;
+  background-color: #f9f9f9;
+  /* font-size: 1em; */
+  color: #323A46;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 58px;
+  cursor: pointer;
+}
+
+/* .footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 1.125em;
+  font-weight: 400;
+} */
+
+.social-links {
+  /* margin-top: 1rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* font-size: 0.95rem; */
+  align-items: center;
+  transform-origin: center;
+}
+
+.footer-divider {
+  background-color: #A0ABBB;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.copyright {
+  font-size: 1em;
+  text-align: left;
+}
+
+.footer-email {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.footer-email img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-button {
+  width: 72px;
+  height: 72px;
   padding: 20px 20px;
   border-radius: 1000px;
   background-color: #022456;
