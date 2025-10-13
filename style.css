@@ -1655,6 +1655,154 @@ a {
 /* Mobile Styling */
 
 @media (max-width: 600px) {
+ 
+/* FAQ - Mobile */
+.faq {
+  background-color: #F7F8F9;
+  display: flex;
+  padding: 48px 16px;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-text-container h2 {
+  font-size: 1.25em;
+}
+
+.faq-text-container p {
+  color: #323A46;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.faq-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Accordion */
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 12px;
+}
+
+.accordion-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accordion-item-question {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #0D0F11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: auto;
+}
+.accordion-item-answer-container {
+  background-color: white;
+  padding: 0px 20px;
+  border-radius: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding-top 0.35s ease, padding-bottom 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+  width: auto;
+  /* display: none; */
+}
+
+.accordion-item.active .accordion-item-answer-container {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.accordion-item.active .chevron-down {
+  transform: rotate(180deg);
+}
+
+.accordion-item-answer {
+  font-size: 1em;
+  font-weight: 500;
+  color: #0D0F11;
+  line-height: 24px;
+}
+
+.chevron-down {
+  width: 24px;
+  height: 24px;
+}
+
+/* Ready To Start - Mobile */
+
+.ready-start {
+  background-color: #022456;
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.ready-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ready-text-container h1 {
+  font-size: 2.25em;
+}
+.ready-text-container p {
+  font-size: 1em;
+}
+.ready-text-container h1, .ready-text-container p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.ready-button {
+  background-color: #fff;
+  color: #022456;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 1000px;
+  font-size: 1.125em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform-origin: center;
+}
+
+.ready-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #CCD3DD, #B3BDCC);
+  transition: transform 0.5s ease, background 0.5s ease;
+}
 
   /* Footer - Mobile */
 
