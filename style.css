@@ -6,6 +6,10 @@
  --text-muted: #444;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 header {
   height: auto;
