@@ -43,6 +43,8 @@ hamburger.addEventListener('click', () => {
 
 
 
+
+
 // Accordion Functionality
 // Select all accordion items
 const accordionItems = document.querySelectorAll('.accordion-item');
@@ -100,3 +102,19 @@ window.addEventListener('DOMContentLoaded', () => {
   navDropdown.style.opacity = '0'
 });
 
+
+// Typeform Popup Integration
+document.addEventListener("DOMContentLoaded", function () {
+  const startJourneyBtn = document.querySelector(".about-button"); // your actual button
+
+  if (startJourneyBtn) {
+    startJourneyBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.typeformEmbed.makePopup("https://form.typeform.com/to/FbzTUHmy", {
+        mode: "popup",
+        hideHeaders: true,
+        hideFooters: true,
+      }).open();
+    });
+  }
+});
