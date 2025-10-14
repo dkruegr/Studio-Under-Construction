@@ -828,7 +828,7 @@ a {
   position: relative;
 }
 
-nav a::after, .footer-links a::after {
+.nav-links a::after, .footer-links a::after {
   width: 0;
   height: 2px;
   bottom: 0;
