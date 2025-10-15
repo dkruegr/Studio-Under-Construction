@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/svg" href="Assets/favicon.svg">
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Font performance optimization -->
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&display=swap" as="style" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&display=swap" rel="stylesheet" crossorigin>
   <link rel="stylesheet" href="style.css">
 
   <title>DKreative Studio – Where Vision Becomes Reality</title>
@@ -73,18 +78,18 @@
     </div>
     <div class="hero-carousel">
       <div class="carousel-track">
-        <div class="carousel-item"><img src="Assets/Daycare Thumbnail.png" alt="Daycare website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Ravwork Cover Art.png" alt="Fasthetics website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Timecapsule Cover.png" alt="Timecapsule website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/DeepClean Thumbnail.png" alt="Deepclean website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Precious Portfolio Cover.png" alt="Precious' portfolio website thumbnail"/></div>
+        <div class="carousel-item"><img src="Assets/Daycare Thumbnail.png" alt="Daycare website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Ravwork Cover Art.png" alt="Fasthetics website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Timecapsule Cover.png" alt="Timecapsule website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/DeepClean Thumbnail.png" alt="Deepclean website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Precious Portfolio Cover.png" alt="Precious' portfolio website thumbnail" fetchpriority="high" decoding="async"/></div>
         
         <!-- Duplicate for smooth infinite scroll -->
-        <div class="carousel-item"><img src="Assets/Daycare Thumbnail.png" alt="Daycare website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Ravwork Cover Art.png" alt="Fasthetics website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Timecapsule Cover.png" alt="Timecapsule website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/DeepClean Thumbnail.png" alt="Deepclean website thumbnail"/></div>
-        <div class="carousel-item"><img src="Assets/Precious Portfolio Cover.png" alt="Precious' portfolio website thumbnail"/></div>
+        <div class="carousel-item"><img src="Assets/Daycare Thumbnail.png" alt="Daycare website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Ravwork Cover Art.png" alt="Fasthetics website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Timecapsule Cover.png" alt="Timecapsule website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/DeepClean Thumbnail.png" alt="Deepclean website thumbnail" fetchpriority="high" decoding="async"/></div>
+        <div class="carousel-item"><img src="Assets/Precious Portfolio Cover.png" alt="Precious' portfolio website thumbnail" fetchpriority="high" decoding="async"/></div>
       </div>
     </div>
 
@@ -206,28 +211,28 @@
       <h2 class="tech-we-use-heading"><img src="Assets/Section Ellipse.svg" class="section-ellipse" alt="elilipse icon">Technologies We Use</h2>
       <p>At DKreative Studio, we harness the power of cutting-edge technologies to bring your digital vision to life</p>
     </div>
-    <div class="tech-container">
-      <div class="tech">Figma</div>
-      <div class="tech">HTML5</div>
-      <div class="tech">CSS3</div>
-      <div class="tech">Javascript</div>
-      <div class="tech">Webflow</div>
-      <div class="tech">Framer</div>
-      <div class="tech">Illustrator</div>
-      <div class="tech">VS Code</div>
-      <div class="tech">Photoshop</div>
-      <div class="tech">Github</div>
-      <div class="tech">Miro</div>
-      <div class="tech">Firebase</div>
-      <div class="tech">Frontend</div>
-      <div class="tech">React</div>
-      <div class="tech">Tailwind</div>
-      <div class="tech">Typescript</div>
-      <div class="tech">React router JS</div>
-      <div class="tech">Node JS</div>
-      <div class="tech">React hooks</div>
-      <div class="tech">Wordpress</div>
-    </div>
+    <ul class="tech-container">
+      <li class="tech">Figma</li>
+      <li class="tech">HTML5</li>
+      <li class="tech">CSS3</li>
+      <li class="tech">Javascript</li>
+      <li class="tech">Webflow</li>
+      <li class="tech">Framer</li>
+      <li class="tech">Illustrator</li>
+      <li class="tech">VS Code</li>
+      <li class="tech">Photoshop</li>
+      <li class="tech">Github</li>
+      <li class="tech">Miro</li>
+      <li class="tech">Firebase</li>
+      <li class="tech">Frontend</li>
+      <li class="tech">React</li>
+      <li class="tech">Tailwind</li>
+      <li class="tech">Typescript</li>
+      <li class="tech">React router JS</li>
+      <li class="tech">Node JS</li>
+      <li class="tech">React hooks</li>
+      <li class="tech">Wordpress</li>
+    </ul>
   </section>
 
 
@@ -240,7 +245,7 @@
     </div>
     <div class="portfolio-grid-container">
       <a href="https://www.figma.com/proto/aUleWJFzbFOn2s6zvQdnlz/Ravwork-Design-Challenge?page-id=0%3A1&node-id=2-5784&viewport=526%2C187%2C0.09&t=gLz4fUpYrXtdi5hP-1&scaling=scale-down-width&content-scaling=fixed" target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/Ravwork Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/Ravwork Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">Fasthetics</h2>
@@ -252,7 +257,7 @@
         </div>
       </a>
       <a href="https://www.figma.com/design/rwlegySI9IP7ydY6ycfzat/Galaxy-Square-NG-Ecommerce-Website-Design?node-id=0-1&t=eG46JWgDZqZEqYUv-1" target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/GalaxySquare Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/GalaxySquare Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">Galaxy Square NG & Autos Limited</h2>
@@ -264,7 +269,7 @@
         </div>
       </a>
       <a href="https://www.figma.com/design/jerq8CfNhwAIXBDt4hDPDS/Deep-Cleaning-Services-Website?node-id=269-3373&t=O2xpA8egvL4o28XG-1" target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/DeepClean Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/DeepClean Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">DeepClean</h2>
@@ -276,7 +281,7 @@
         </div>
       </a>
       <a href="https://tommy-portfolio-website.webflow.io" target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/Precious Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/Precious Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">Portfolio Website</h2>
@@ -288,7 +293,7 @@
         </div>
       </a>
       <a href="https://time-capsule-website.web.app" target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/Timecapsule Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/Timecapsule Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">Time Capsule Website</h2>
@@ -300,7 +305,7 @@
         </div>
       </a>
       <a href="https://www.figma.com/design/6RYWxZZOlqyyNFz7oAaUfJ/Daycare-Centre-Landing-Page?node-id=0-1&t=kLe0g4It9TXXf6ko-1 " target="_blank" rel="noopener" class="portfolio-item">
-        <div class="portfolio-item-image-wrapper"><img src="Assets/Daycare Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail"></div>
+        <div class="portfolio-item-image-wrapper"><img src="Assets/Daycare Portfolio Thumbnail.png" alt="project thumbnail" class="portfolio-item-thumbnail" loading="lazy"></div>
         <div class="portfolio-item-details">
           <div class="portfolio-item-text-container">
             <h2 class="portfolio-item-title">Sunshine Kids</h2>

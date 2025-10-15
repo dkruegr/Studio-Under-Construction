@@ -465,6 +465,7 @@ body {
 /* Tech Grid */
 
 .tech-container {
+  list-style: none;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1289,6 +1290,7 @@ nav a:hover::after, .footer-links a:hover::after {
 /* Tech Grid */
 
 .tech-container {
+  list-style: none;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1984,6 +1986,7 @@ a {
 /* Tech Grid */
 
 .tech-container {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
