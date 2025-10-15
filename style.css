@@ -936,34 +936,35 @@ nav a:hover::after, .footer-links a:hover::after {
 
 /* Hide by default */
 .nav-dropdown {
-  display: flex;
-  margin-top: 16px;
-  width: 60vw;
-  background-color: white;
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 32px ;
+  width: 60vw;
+  background-color: white;
+  padding: 32px;
+  display: flex;
+  margin-top: 16px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
-  opacity: 0;
-  max-height: 0;
   overflow: hidden;
   visibility: hidden;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+  opacity: 0;
+  max-height: 0;
+  z-index: 999;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s;
 }
 
 
 /* When active/opened */
 .nav-dropdown.active {
   display: flex;
-  margin-top: 16px;
   align-items: center;
+  margin-top: 16px;
   opacity: 1;
   max-height: 500px;
   visibility: visible;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-  /* transition: max-height 0.4s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in; */
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
 .nav-dropdown-links {
