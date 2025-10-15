@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/svg" href="Assets/favicon.svg">
 
-    <!-- Font performance optimization -->
+  
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://embed.typeform.com">
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+
+  <!-- Font performance optimization -->
   <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&display=swap" as="style" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&display=swap" rel="stylesheet" crossorigin>
+  
+  <!-- Main styles and scripts -->
   <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="script.js" as="script">
 
   <title>DKreative Studio – Where Vision Becomes Reality</title>
   <meta name="title" content="DKreative Studio – Where Vision Becomes Reality">
@@ -402,7 +409,7 @@
       <a href="#hero" class="footer-button"><img src="Assets/Arrow up.svg" alt="arrow up icon" class="arrow up"></a>
     </div>
   </footer>
-<script src="https://embed.typeform.com/embed.js"></script>
-<script src="script.js"></script>
+<script src="https://embed.typeform.com/embed.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
