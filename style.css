@@ -55,8 +55,8 @@ h1, h2, h3, p {
   align-items: center;
   padding: 12px 32px;
   border-radius: 1000px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 1);
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
+  background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
@@ -64,19 +64,19 @@ h1, h2, h3, p {
 }
 
 .navbar.scrolled {
-  background-color: rgba(4, 49, 122, 0.4);
-  box-shadow: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .navbar.scrolled a {
-  color: white;
+  color: black;
 }
 
 .navbar.scrolled .nav-logo {
-  content: url("Assets/Wordmark\ Logo\ white.svg");
+  content: url("Assets/Header\ Wordmark.svg");
 }
 
 .navbar.scrolled .header-button {
-  background-color: #04317A;
+  background-color: #022456;
 }
 
 .nav-logo {
@@ -91,8 +91,8 @@ h1, h2, h3, p {
   align-items: center;
   gap: 24px;
   font-size: 1.125em;
+  color: white;
   /* font-weight: 400; */
-  color: #000;
 }
 
 .hamburger {
@@ -149,7 +149,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8), rgba(2, 36, 86, 0.5));
+  background: radial-gradient(circle at center, rgba(2, 36, 86, 1), rgba(0, 0, 0, 1));
   padding:  128px 200px;
   display: flex;
   flex-direction: column;
@@ -164,13 +164,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: white;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: -200px;
+  margin-top: -100px;
   margin-bottom: 128px;
 }
 
@@ -185,7 +186,7 @@ body {
 
 .hero-description {
   font-size: 1.5em;
-  color: #323A46;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -823,7 +824,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s ease-in-out;
@@ -923,7 +924,7 @@ nav a:hover::after, .footer-links a:hover::after {
 }
 
 .navbar.scrolled .hamburger img {
-  content: url("Assets/Hamburger\ Menu\ White.svg");
+  content: url("Assets/Hamburger\ Menu.svg");
 }
 
 
@@ -1022,7 +1023,7 @@ nav a:hover::after, .footer-links a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: -240px;
+  margin-top: -120px;
   margin-bottom: 0px;
 }
 
@@ -1037,7 +1038,7 @@ nav a:hover::after, .footer-links a:hover::after {
 
 .hero-description {
   font-size: 1.5em;
-  color: #323A46;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -1694,7 +1695,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: -100px;
+  margin-top: -25px;
   margin-bottom: 50px;
 }
 
@@ -1709,7 +1710,7 @@ a {
 
 .hero-description {
   font-size: 1.25em;
-  color: #323A46;
+  color: #fff;
   font-weight: 400;
 }
 
