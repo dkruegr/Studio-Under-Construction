@@ -1,3 +1,10 @@
+// Scroll to Top of page on Refresh
+if (window.location.hash) {
+    const cleanUrl = window.location.origin + window.location.pathname;
+    window.location.replace(cleanUrl);
+}
+
+
 // Navbar Animation on Scroll
   window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
