@@ -63,12 +63,51 @@ h1, h2, h3, p {
   /* margin: 0 auto; */
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 1.125em;
+  color: white;
+  /* font-weight: 400; */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-links a::after {
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  transition: width 0.3s ease-in-out; 
+}
+
+.nav-links a:hover::after, .navbar.scrolled .nav-links a:hover::after {
+  width: 100%;
+} 
+
+/* Navbar Scrolled State */
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.navbar.scrolled a {
+
+.navbar.scrolled .nav-links a {
   color: black;
+}
+
+/* Change underline color when scrolled */
+.navbar.scrolled .nav-links a::after {
+  background-color: #022456;
 }
 
 .navbar.scrolled .nav-logo {
@@ -84,15 +123,6 @@ h1, h2, h3, p {
   height: 15px;
   cursor: pointer;
   transition: all 0.5s ease;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-size: 1.125em;
-  color: white;
-  /* font-weight: 400; */
 }
 
 .hamburger {
@@ -832,33 +862,6 @@ body {
   background: linear-gradient(135deg, #04317A, #022456);
   transition: all 0.5s ease;
 }
-
-a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  transition: color 0.3s ease-in-out;
-  position: relative;
-}
-
-.nav-links a::after, .footer-links a::after {
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #022456;
-  content: "";
-  position: absolute;
-  transition: width 0.3s ease-in-out;  
-}
-
-a:hover {
-  color: #022456;
-}
-
-nav a:hover::after, .footer-links a:hover::after {
-  width: 100%;
-} 
 
 .social-links a:hover {
   transform: scale(1.1);
