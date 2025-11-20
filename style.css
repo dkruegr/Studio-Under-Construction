@@ -2369,3 +2369,77 @@ a {
   height: 24px;
 }
 }
+
+
+
+/* Animations */
+
+.animate-header {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-header.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-card {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.5s ease-out;
+}
+
+.animate-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* For large display text like "Define. Kreate. Ship" */
+.animate-display {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+}
+
+.animate-display.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* For each ADDIE step block */
+.animate-step {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-step.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-container {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease-out;
+}
+
+.animate-container.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* For portfolio grid items */
+.animate-portfolio-item {
+  opacity: 0;
+  transform: translateY(30px) scale(0.96);
+  transition: all 0.6s ease-out;
+}
+
+.animate-portfolio-item.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

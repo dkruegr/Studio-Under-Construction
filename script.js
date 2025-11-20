@@ -125,3 +125,61 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+/* ================================
+   GLOBAL ANIMATION OBSERVER
+   ================================ */
+
+const animateOnceObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      animateOnceObserver.unobserve(entry.target); // fire once
+    }
+  });
+}, { threshold: 0.25 });
+
+const animateRepeatObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show"); // reset so it replays
+    }
+  });
+}, { threshold: 0.4 });
+
+/* ================================
+   REGISTER ANIMATIONS
+   ================================ */
+
+// 1. Animate headers ONCE
+document.querySelectorAll(".animate-header").forEach(el => {
+  animateOnceObserver.observe(el);
+});
+
+// 2. Animate service cards, tech cards, FAQ cards ONCE
+document.querySelectorAll(".animate-card").forEach(el => {
+  animateOnceObserver.observe(el);
+});
+
+// 3. Animate steps ONCE
+document.querySelectorAll(".animate-step").forEach(el => {
+  animateOnceObserver.observe(el);
+});
+
+// 4. Animate portfolio items ONCE
+document.querySelectorAll(".animate-portfolio-item").forEach(el => {
+  animateOnceObserver.observe(el);
+});
+
+// 5. Animate containers (optional scale effects) ONCE
+document.querySelectorAll(".animate-container").forEach(el => {
+  animateOnceObserver.observe(el);
+});
+
+// 6. Animate DISPLAY text — REPEATS ALWAYS
+document.querySelectorAll(".animate-display").forEach(el => {
+  animateRepeatObserver.observe(el);
+});
